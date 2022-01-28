@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap 101 Template</title>
+  <meta charset="utf-8">
+  <!--<meta http-equiv="X-UA-Compatible" content="IE=edge"> Ovo prvi put vidim da li mora da se koristi-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <!-- Ovde su js i jquery bili na dnu body, da li je tako i u praksi ili moze sve u head -->
+  <link rel="stylesheet" href="./css/bmw.css">
+  <link rel="stylesheet" href="./css/baguetteBox.min.css">
+  <script type="text/javascript" src="./js/jquery.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <!--ovde je upalilo sa external js-->
+
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container nova">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-left" href="#myPage"><img id="brand-img" alt="Logo"
+            src="https://cdn.freebiesupply.com/logos/large/2x/bmw-2-logo-png-transparent.png"></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class=" glyphicon glyphicon-user" data-toggle="modal" data-target="#myModal"> LOG
+                IN</span></a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li><a href="#packages">PACKAGES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+      <div id="no-mod" class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-log-in"> LOG IN</span></h4>
+        </div>
+        <div class="modal-body">
+          <form onsubmit="validate()" id="test" role="form">
+            <div class="form-group">
+              <label for="user"><span class="glyphicon glyphicon-user"></span> User</label>
+              <input class="form-control" type="text" id="user" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-lock"></span> Password</label>
+              <input class="form-control" type="password" id="psw" placeholder="Enter your password">
+            </div>
+            <button id="cls-mod" type="submit" value="submit" class="btn btn-block nova5">Submit
+              <span class="glyphicon glyphicon-ok"></span>
+            </button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Cancel
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="container">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <div id="clock" class="clockStyle"></div>
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img
+            src="https://www.bmw.rs/content/dam/bmw/marketB4R1/bmw_rs/Topics/offers-and-services/akcijske%20ponude/serija-5/1680x756-bmw-s5.jpg"
+            alt="BMW serja 5">
+          <div class="carousel-caption">
+            <h3>THE 5</h3>
+            <p>Ultimate biznis mashine</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.bmw.rs/content/dam/bmw/common/home/teaser/bmw-x-series-x1-home-teaser-desktop.jpg"
+            alt="BMW X1">
+          <div class="carousel-caption">
+            <h3>BMW X 1</h3>
+            <p>More enhanced</p>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="https://www.bmw.rs/content/dam/bmw/marketB4R1/bmw_rs/Topics/offers-and-services/akcijske%20ponude/Serija-3/bmw-3series-3er-inspire-phev-sp-xxl.jpg"
+            alt="BMW serija 3">
+          <div class="carousel-caption">
+            <h3>BMW 318d Sport Line</h3>
+            <p>Dreams are everything</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="https://www.bmw.rs/content/dam/bmw/common/home/teaser/bmw-8series-gran-coupe-hometeaser-sp-xxl.jpg"
+            alt="BMW serja 8">
+          <div class="carousel-caption">
+            <h3>BMW 8</h3>
+            <p>BMW 8 gran coupe</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev" role="button">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next" role="button">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <div id="about" class="container text-center">
+    <h2>ABOUT US</h2>
+    <p>Some text Some text Some text Some text Some text Some text Some text Some text Some text
+      Some text Some text Some text Some text Some text Some text Some text Some text Some text
+      Some text Some text Some text Some text Some text Some text Some text Some text Some text
+      Some text Some text Some text Some text Some text Some text Some text Some text Some text
+      Some text Some text Some text Some text Some text Some text Some text Some text Some text
+    </p>
+    <h3>Our Team</h3>
+    <br>
+    <div class="row">
+      <div class="col-md-4 col-sm-6">
+        <p><strong>Name</strong></p>
+        <a href="#demo" data-toggle="collapse">
+          <img src="https://www.w3schools.com/howto/img_avatar.png" class="img-circle person" alt="Employee">
+        </a>
+        <div id="demo" class="collapse">
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <p><strong>Name</strong></p>
+        <a href="#demo1" data-toggle="collapse">
+          <img src="https://www.w3schools.com/howto/img_avatar2.png" class="img-circle person" alt="Employee">
+        </a>
+        <div id="demo1" class="collapse">
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
+        <p><strong>Name</strong></p>
+        <a href="#demo2" data-toggle="collapse">
+          <img src="https://www.w3schools.com/w3images/avatar2.png" class="img-circle person" alt="Employee">
+        </a>
+        <div id="demo2" class="collapse">
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+          <p>Some text Some text Some text Some text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="gallery" class="demo gallery">
+    <div class="container text-center">
+      <h2>GALLERY<h2>
+          <div class="row text-center">
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img1.jpg" data-caption="Some text"><img src="./Media/img1.jpg" alt="Img 1"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img2.jpg" data-caption="Some text"><img src="./Media/img2.jpg" alt="Img 2"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img3.jpg" data-caption="Some text"><img src="./Media/img3.jpg" alt="Img 3"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img4.jpg" data-caption="Some text"><img src="./Media/img4.jpg" alt="Img 4"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img5.jpg" data-caption="Some text"><img src="./Media/img5.jpg" alt="Img 5"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+              <div class="thumbnail">
+                <a href="./Media/img6.jpg" data-caption="Some text"><img src="./Media/img6.jpg" alt="Img 6"></a>
+                <p><strong>Some text</strong></p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+  <div id="packages" class="container text-center">
+    <h2>AVALIABLE PACKAGES<h2>
+        <div class="countdown">
+          <p class="title">Time remaining</p>
+          <div class="ctbox">
+            <p id="dbox"></p>
+            <p class="p1">Days</p>
+          </div>
+          <div class="ctbox">
+            <p id="hbox"></p>
+            <p class="p1">Hours</p>
+          </div>
+          <div class="ctbox">
+            <p id="mbox"></p>
+            <p class="p1">Minutes</p>
+          </div>
+          <div class="ctbox">
+            <p id="sbox"></p>
+            <p class="p1">Seconds</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <div class="panel panel-default text-center">
+              <div class="panel-heading">
+                <h3>Basic</h3>
+              </div>
+              <div class="panel-body">
+                <p>Some text <strong>20.000,00$</strong></p>
+                <p>Some text <strong>25.000,00$</strong></p>
+                <p>Some text <strong>28.000,00$</strong></p>
+                <p>Some text <strong>30.000,00$</strong></p>
+                <p>Some text <strong>45.000,00$</strong></p>
+              </div>
+              <div class="panel-footer">
+                <h2>BMW Series 1</h2>
+                <button class="btn btn-info btn-lg">More info</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div class="panel panel-default text-center">
+              <div class="panel-heading">
+                <h3>Standard</h3>
+              </div>
+              <div class="panel-body">
+                <p>Some text <strong>30.000,00$</strong></p>
+                <p>Some text <strong>35.000,00$</strong></p>
+                <p>Some text <strong>38.000,00$</strong></p>
+                <p>Some text <strong>40.000,00$</strong></p>
+                <p>Some text <strong>55.000,00$</strong></p>
+              </div>
+              <div class="panel-footer">
+                <h2>BMW Series 3</h2>
+                <button class="btn btn-info btn-lg">More info</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3">
+            <div class="panel panel-default text-center">
+              <div class="panel-heading">
+                <h3>Elite</h3>
+              </div>
+              <div class="panel-body">
+                <p>Some text <strong>80.000,00$</strong></p>
+                <p>Some text <strong>85.000,00$</strong></p>
+                <p>Some text <strong>88.000,00$</strong></p>
+                <p>Some text <strong>100.000,00$</strong></p>
+                <p>Some text <strong>125.000,00$</strong></p>
+              </div>
+              <div class="panel-footer">
+                <h2>BMW Series 5</h2>
+                <button class="btn btn-info btn-lg">More info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div id="contact" class="container">
+    <h2 class="text-center">CONTACT</h2><br><br>
+    <div class="row">
+      <div class="col-sm-5">
+        <p>We are avaliable for contact 24/7</strong></p>
+        <p><span class="glyphicon glyphicon-map-marker"></span> Belgrade, Srb</p>
+        <p><span class="glyphicon glyphicon-phone"></span>+3816********</p>
+        <p><span class="glyphicon glyphicon-envelope"></span>******@gmail.com</p>
+      </div>
+      <div class="col-sm-7">
+        <div class="row">
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="name" name="name" type="text" required placeholder="Enter your name">
+          </div>
+          <div class="col-sm-6 form-group">
+            <input class="form-control" id="email" name="mail" type="mail" required placeholder="Enter your email">
+          </div>
+        </div>
+        <textarea class="form-control" id="comments" name="comments" placeholder="Comments" rows="5"></textarea>
+        <br>
+        <div class="row">
+          <div class="col-sm-12 form-group">
+            <button class="btn btn-danger pull-right">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To top">
+      <span class="glyphicon glyphicon-chevron-up"></span></a>
+    <p>BMW Site made by Mare</p>
+  </footer>
+
+  <script src="./js/login.js"></script>
+  <script src="./js/baguetteBox.min.js" async></script>
+  <!--Koja je razlika izmedju obicnog js i min.js-->
+  <script>
+    window.onload = function () { //kako ovde radi preko window komande a ne preko onClick?
+      baguetteBox.run('.demo', {
+        animation: 'fadeIn',
+      });
+    }
+
+    showTime() // ovde sam ovako pozvao digitalni sat
+    countDown() // ovde sam ovako pozvao timer
+  </script>
+
+
+</body>
+
+</html>

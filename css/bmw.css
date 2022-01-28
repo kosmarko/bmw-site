@@ -1,0 +1,239 @@
+.container {
+  padding: 40px 10px;
+}
+
+body {
+  background: #2d2d30;
+  color: #bdbdbd;
+}
+
+.person {
+  border: 10px solid transparent;
+  margin-bottom: 25px;
+  width: 255px;
+  height: 255px;
+  opacity: 0.7;
+  width: 90%;
+  height: 90%;
+}
+
+.person:hover {
+  border-color: #3c4acc;
+}
+
+.carousel-inner img {
+  width: 1200px;
+  height: 700px;
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  color: #3c4acc;
+  font-weight: 600;
+}
+
+.carousel-caption p {
+  color: #3c4acc;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.carousel-indicators li {
+  border-color: #3c4acc;
+}
+
+.carousel-indicators li.active {
+  background-color: #3c4acc;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  color: #3c4acc;
+}
+
+@media (max-width: 700px) {
+  .carousel-caption {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .person {
+    width: 60%;
+    height: 60%;
+  }
+}
+
+.thumbnail {
+  padding: 0 0 15px 0;
+  border: none;
+  border-radius: 0;
+}
+
+.thumbnail p {
+  color: #2d2d30;
+}
+
+/*.data-caption {
+  text-transform: capitalize;
+  color: aqua;
+} Ovde sam pokusao da ubacim style za naslove slika ali mislim
+ da nije dozvoljeno*/
+.panel {
+  border: 1px solid #3c4acc;
+  border-radius: 0;
+  transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.2);
+}
+
+.panel-footer .btn:hover {
+  border: 1px solid white;
+  background-color: #3c4acc;
+  color: black;
+}
+
+.panel-heading {
+  color: #fff !important;
+  background-color: #3c4acc !important;
+  padding: 25px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.panel-footer h2 {
+  font-size: 32px;
+}
+
+.panel-footer .btn {
+  margin: 15px 0;
+  background-color: #3c4acc;
+  color: #fff;
+}
+
+.panel p {
+  color: #2d2d30;
+}
+
+.panel h2 {
+  color: #2d2d30;
+}
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #3c4acc;
+}
+
+footer p {
+  font-size: 20px;
+  color: #2d2d30;
+}
+
+footer {
+  background-color: rgb(199, 199, 199);
+}
+
+.nova {
+  padding: 0 40px;
+}
+
+#comments {
+  margin-bottom: 200px;
+}
+
+.navbar {
+  margin-bottom: 0;
+  background-color: rgb(199, 199, 199);
+  border: 0;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.navbar li a,
+.navbar {
+  color: #2d2d30;
+}
+
+.navbar-nav li a:hover {
+  color: #3c4acc !important;
+}
+
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #3c4acc !important;
+}
+
+#brand-img {
+  height: 50px;
+}
+
+.modal-header,
+h4,
+.close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header,
+.modal-body {
+  padding: 40px 50px;
+}
+
+.nova5 {
+  color: black;
+}
+
+.nova5:hover {
+  color: #fff;
+  background-color: #3c4acc !important;
+}
+
+.invalid {
+  border: 1px solid red;
+}
+
+.clockStyle {
+  margin-top: 5px;
+  padding: 10px;
+  color: #3c4acc;
+  display: inline;
+  z-index: 1;
+  position: absolute;
+  right: 0px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  background-color: black;
+  border: #999 2px inset;
+}
+
+.countdown {
+  position: relative;
+  background-color: black;
+  text-align: center;
+  width: 350px;
+  margin: 10px auto 10px auto;
+  color: #3c4acc;
+  border: #999 2px inset;
+  border-radius: 20px;
+  padding-top: 10px;
+}
+
+.ctbox {
+  display: inline-block;
+  color: #3c4acc;
+  padding: 5px;
+}
+
+.p1 {
+  font-size: 15px;
+}

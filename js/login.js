@@ -70,7 +70,7 @@ function showTime() {
 }
 //showTime() umesto ovde ja sam je pozvao u html
 function countDown() {
-  var eventDate = new Date('January 01, 2022, 00:00:01');
+  var eventDate = new Date('January 01, 2032, 00:00:01');
   var nowDate = new Date();
   var diffTime = eventDate.getTime() - nowDate.getTime();
   if (diffTime <= 0) {
@@ -99,26 +99,18 @@ function countDown() {
 }
 
 $(document).ready(function() {
-  //pokusao sam da ovo uradim preko external js fajla ali ne radi
-  // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== '') {
-      // Prevent default anchor click behavior
       event.preventDefault();
 
-      // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate(
         {
           scrollTop: $(hash).offset().top
         },
         900,
         function() {
-          // Add hash (#) to URL when done scrolling (default click behavior)
           window.location.hash = hash;
         }
       );

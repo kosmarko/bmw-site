@@ -75,11 +75,6 @@ body {
   color: #2d2d30;
 }
 
-/*.data-caption {
-  text-transform: capitalize;
-  color: aqua;
-} Ovde sam pokusao da ubacim style za naslove slika ali mislim
- da nije dozvoljeno*/
 .panel {
   border: 1px solid #3c4acc;
   border-radius: 0;
